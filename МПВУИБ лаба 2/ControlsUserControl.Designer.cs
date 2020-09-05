@@ -1,4 +1,4 @@
-﻿namespace Пасоиб_лаба_2
+﻿namespace МПВУИБ_лаба_2
 {
     partial class ControlsUserControl
     {

@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Пасоиб_лаба_2
+namespace МПВУИБ_лаба_2
 {
     public partial class EditForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Пасоиб_лаба_2
+﻿namespace МПВУИБ_лаба_2
 {
     partial class EditForm
     {
@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.controlsUserControl = new Пасоиб_лаба_2.ControlsUserControl();
+            this.controlsUserControl = new МПВУИБ_лаба_2.ControlsUserControl();
             this.titleLabel = new System.Windows.Forms.Label();
             this.editDataGridView = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();

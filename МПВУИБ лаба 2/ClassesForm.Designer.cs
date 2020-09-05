@@ -1,4 +1,4 @@
-﻿namespace Пасоиб_лаба_2
+﻿namespace МПВУИБ_лаба_2
 {
     partial class SaveClassesForm
     {
@@ -47,7 +47,7 @@
             this.addLabel = new System.Windows.Forms.Label();
             this.updatePictureBox = new System.Windows.Forms.PictureBox();
             this.getResultPictureBox = new System.Windows.Forms.PictureBox();
-            this.controlsUserControl = new Пасоиб_лаба_2.ControlsUserControl();
+            this.controlsUserControl = new МПВУИБ_лаба_2.ControlsUserControl();
             ((System.ComponentModel.ISupportInitialize)(this.statementDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updatePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getResultPictureBox)).BeginInit();

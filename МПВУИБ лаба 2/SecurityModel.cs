@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Пасоиб_лаба_2
+namespace МПВУИБ_лаба_2
 {
     class SecurityModel
     {

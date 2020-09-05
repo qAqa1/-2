@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Пасоиб_лаба_2.Properties {
+namespace МПВУИБ_лаба_2.Properties {
     using System;
     
     
