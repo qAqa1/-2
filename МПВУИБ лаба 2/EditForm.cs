@@ -48,6 +48,8 @@ namespace МПВУИБ_лаба_2
 
         private void saceChenjesButton_Click(object sender, EventArgs e)
         {
+            editDataGridView.EndEdit();
+
             StringBuilder sb = new StringBuilder(string.Empty);
 
             foreach (DataGridViewRow row in editDataGridView.Rows)
