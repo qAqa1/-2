@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.controlsUserControl = new МПВУИБ_лаба_2.ControlsUserControl();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.titleLabel = new System.Windows.Forms.Label();
             this.editDataGridView = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,16 +40,10 @@
             this.StatementText = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saceChenjesButton = new System.Windows.Forms.Button();
             this.openStatementFileLabel = new System.Windows.Forms.Label();
-            this.showDataModelLabel = new System.Windows.Forms.Label();
+            this.closeLabel = new System.Windows.Forms.Label();
+            this.resetLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.editDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // controlsUserControl
-            // 
-            this.controlsUserControl.Location = new System.Drawing.Point(847, -1);
-            this.controlsUserControl.Name = "controlsUserControl";
-            this.controlsUserControl.Size = new System.Drawing.Size(63, 38);
-            this.controlsUserControl.TabIndex = 142;
             // 
             // titleLabel
             // 
@@ -66,46 +59,46 @@
             // 
             // editDataGridView
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.editDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.editDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.editDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.editDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.editDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.editDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.editDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.editDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.saveClass,
             this.StatementText});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.editDataGridView.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.editDataGridView.DefaultCellStyle = dataGridViewCellStyle13;
             this.editDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.editDataGridView.Location = new System.Drawing.Point(12, 68);
             this.editDataGridView.Name = "editDataGridView";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.editDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.editDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.editDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.editDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.editDataGridView.Size = new System.Drawing.Size(883, 466);
             this.editDataGridView.TabIndex = 149;
             // 
@@ -153,17 +146,32 @@
             this.openStatementFileLabel.Text = "Открыть файл сданными";
             this.openStatementFileLabel.Click += new System.EventHandler(this.openStatementFileLabel_Click);
             // 
-            // showDataModelLabel
+            // closeLabel
             // 
-            this.showDataModelLabel.AutoSize = true;
-            this.showDataModelLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showDataModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.showDataModelLabel.Location = new System.Drawing.Point(22, 19);
-            this.showDataModelLabel.Name = "showDataModelLabel";
-            this.showDataModelLabel.Size = new System.Drawing.Size(120, 13);
-            this.showDataModelLabel.TabIndex = 152;
-            this.showDataModelLabel.Text = "Посмотреть признаки";
-            this.showDataModelLabel.Visible = false;
+            this.closeLabel.AutoSize = true;
+            this.closeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.closeLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeLabel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.closeLabel.Location = new System.Drawing.Point(868, 9);
+            this.closeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.closeLabel.Name = "closeLabel";
+            this.closeLabel.Size = new System.Drawing.Size(28, 28);
+            this.closeLabel.TabIndex = 153;
+            this.closeLabel.Text = "X";
+            this.closeLabel.Click += new System.EventHandler(this.closeLabel_Click);
+            // 
+            // resetLabel
+            // 
+            this.resetLabel.AutoSize = true;
+            this.resetLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resetLabel.Location = new System.Drawing.Point(12, 21);
+            this.resetLabel.Name = "resetLabel";
+            this.resetLabel.Size = new System.Drawing.Size(338, 13);
+            this.resetLabel.TabIndex = 154;
+            this.resetLabel.Text = "Сбросить файлы программы (требуется перезапуск программы)";
+            this.resetLabel.Click += new System.EventHandler(this.resetLabel_Click);
             // 
             // EditForm
             // 
@@ -171,12 +179,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(907, 610);
-            this.Controls.Add(this.showDataModelLabel);
+            this.Controls.Add(this.resetLabel);
+            this.Controls.Add(this.closeLabel);
             this.Controls.Add(this.openStatementFileLabel);
             this.Controls.Add(this.saceChenjesButton);
             this.Controls.Add(this.editDataGridView);
             this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.controlsUserControl);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditForm";
@@ -190,8 +198,6 @@
         }
 
         #endregion
-
-        private ControlsUserControl controlsUserControl;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.DataGridView editDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
@@ -199,6 +205,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StatementText;
         private System.Windows.Forms.Button saceChenjesButton;
         private System.Windows.Forms.Label openStatementFileLabel;
-        private System.Windows.Forms.Label showDataModelLabel;
+        private System.Windows.Forms.Label closeLabel;
+        private System.Windows.Forms.Label resetLabel;
     }
 }

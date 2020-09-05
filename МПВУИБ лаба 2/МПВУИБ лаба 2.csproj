@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassesForm.cs">
+    <Compile Include="SaveClassesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassesForm.Designer.cs">
-      <DependentUpon>ClassesForm.cs</DependentUpon>
+    <Compile Include="SaveClassesForm.Designer.cs">
+      <DependentUpon>SaveClassesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlsUserControl.cs">
       <SubType>UserControl</SubType>
@@ -71,8 +71,8 @@
     <Compile Include="SecurityModel.cs" />
     <Compile Include="Statement.cs" />
     <Compile Include="Style.cs" />
-    <EmbeddedResource Include="ClassesForm.resx">
-      <DependentUpon>ClassesForm.cs</DependentUpon>
+    <EmbeddedResource Include="SaveClassesForm.resx">
+      <DependentUpon>SaveClassesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlsUserControl.resx">
       <DependentUpon>ControlsUserControl.cs</DependentUpon>
@@ -108,6 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Обновить.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="program_data_backup\bd.txt" />
+    <Content Include="program_data_backup\security_model.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

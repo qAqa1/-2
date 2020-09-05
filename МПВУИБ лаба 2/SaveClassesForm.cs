@@ -13,9 +13,12 @@ namespace МПВУИБ_лаба_2
 {
     public partial class SaveClassesForm : Form
     {
+        public const string StatementFile = "bd.txt",
+                    SecurityModelFileName = "security_model.txt";
+
         public SaveClassesForm()
         {
-            https://fstec.ru/component/attachments/download/297
+        https://fstec.ru/component/attachments/download/297
 
             InitializeComponent();
 
@@ -37,56 +40,42 @@ namespace МПВУИБ_лаба_2
 
             updateAction = UpdateTable;
             UpdateTable();
-            //statementDataGridView.Rows.Add(1,"Действие", true, 1);
-
         }
 
         void UpdateTable()
         {
+            outputTextBox.ScrollBars = ScrollBars.None;
             outputTextBox.Clear();
             statementDataGridView.Rows.Clear();
 
-            if (!File.Exists(StatementFile))
-            {
-                File.Create(StatementFile);
-            }
+            if (!File.Exists(StatementFile)) File.Create(StatementFile);
 
             string[] lines = File.ReadAllLines(StatementFile, Encoding.Default);
 
             Array.ForEach(lines, line =>
             {
-                if (line == string.Empty)
-                {
-                    return;
-                }
+                if (line == string.Empty) return;
 
                 Statement statement = Statement.Parse(line);
                 statementDataGridView.Rows.Add(statement.CecurityCriterionId, statement.Text, false, statement.SaveClass);
             }
             );
 
-            //CecurityCriterion testSaveClass = CecurityCriterion.Parse("0|2|Текст|Угроза если мало");
-            //Console.WriteLine(testSaveClass.DebugDescription);
-
-            if (!File.Exists(SecurityModelFileName))
-            {
-                File.Create(SecurityModelFileName);
-            }
-
+            if (!File.Exists(SecurityModelFileName)) File.Create(SecurityModelFileName);
             securityModel = SecurityModel.FromFile(SecurityModelFileName);
         }
 
         Action updateAction;
 
-
         SecurityModel securityModel;
 
         public void Output(string text) => outputTextBox.Text += (text + Environment.NewLine);
 
-        public const string StatementFile = "bd.txt", 
-                    SecurityModelFileName = "security_model.txt";
-
-        private void clearLabel_Click(object sender, EventArgs e) => outputTextBox.Clear();
+        private void clearLabel_Click(object sender, EventArgs e)
+        {
+            outputTextBox.ScrollBars = ScrollBars.None;
+            outputTextBox.Clear();
+        }
 
         private void updatePictureBox_Click(object sender, EventArgs e) => UpdateTable();
 
@@ -100,12 +89,6 @@ namespace МПВУИБ_лаба_2
 
             foreach (DataGridViewRow row in statementDataGridView.Rows)
             {
-                //Console.WriteLine("{");
-                //Console.WriteLine(row.Cells["YesOrNo"].Value);
-                //Console.WriteLine(row.Cells["id"].Value);
-                //Console.WriteLine(row.Cells["StatementText"].Value);
-                //Console.WriteLine("}");
-
                 if ((bool)row.Cells["YesOrNo"].Value)
                 {
                     securityModel[(int)row.Cells["id"].Value].Value -= 
@@ -117,8 +100,6 @@ namespace МПВУИБ_лаба_2
             }
 
             Console.WriteLine("__________________________________________");
-
-            //Console.WriteLine(statementDataGridView.Rows);
             Console.WriteLine(securityModel.DebugDesription);
 
             Output(securityModel.ExpertResult());
@@ -126,6 +107,7 @@ namespace МПВУИБ_лаба_2
             outputTextBox.SelectionStart = outputTextBox.TextLength;
             //scroll to the caret
             outputTextBox.ScrollToCaret();
+            outputTextBox.ScrollBars = ScrollBars.Vertical;
         }
     }
 }

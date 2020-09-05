@@ -13,10 +13,8 @@ namespace МПВУИБ_лаба_2
 
         public int Value = 7;
 
-
         public readonly string Text,
                                Recomendation;
-
 
         public CecurityCriterion(int id, int borderValue, string text, string outputStringIfSmallValue)
         {
@@ -49,16 +47,11 @@ namespace МПВУИБ_лаба_2
             }
         }
 
-
         public bool Test() => !(Value > BorderValue);
-
 
         public string ExpertResult()
         {
-            if (!(Value > BorderValue))
-            {
-                return string.Empty;
-            }
+            if (!(Value > BorderValue)) return string.Empty;
 
             StringBuilder sb = new StringBuilder(string.Empty);
 
@@ -66,13 +59,9 @@ namespace МПВУИБ_лаба_2
             sb.Append("    ");
             
             if (Value > BorderValue)
-            {
                 sb.Append(Recomendation);
-            }
             else
-            {
                 sb.Append("По данному критерию защита удавлетворяет всем требованиям");
-            }
 
             sb.Append(Environment.NewLine);
 
@@ -86,13 +75,9 @@ namespace МПВУИБ_лаба_2
             int id, borderValue;
             string text, outputStringIfSmallValue;
 
-
             string[] apart = saveClassStr.Split(border);
 
-            if (apart.Length != 4)
-            {
-                throw new Exception();
-            }
+            if (apart.Length != 4) throw new Exception();
 
             id = apart[0].ToInt();
             borderValue = apart[1].ToInt();

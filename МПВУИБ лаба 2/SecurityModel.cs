@@ -34,7 +34,7 @@ namespace МПВУИБ_лаба_2
 
                 string border = Environment.NewLine;
 
-                safeCriterions.ForEach(cecurityCriterion => 
+                safeCriterions.ForEach(cecurityCriterion =>
                 sb.Append(cecurityCriterion.DebugDescription + border));
 
                 return sb.ToString();
@@ -57,12 +57,6 @@ namespace МПВУИБ_лаба_2
         public CecurityCriterion this[int Id]
         {
             get => FindById(Id);
-
-            //set
-            //{
-            //    CecurityCriterion sc = FindById(Id);
-            //    sc = value;
-            //}
         }
 
         public string ExpertResult()
@@ -86,11 +80,12 @@ namespace МПВУИБ_лаба_2
             }
             );
 
-            float safePerCent = passedTests / safeCriterions.Count * 100f;
+            float safePerCent = (float)passedTests / (float)safeCriterions.Count * 100f;
 
             sb.Append("Система защищена на " + safePerCent + "%");
 
             return sb.ToString();
+
         }
 
         public int Lenght => safeCriterions.Count;
